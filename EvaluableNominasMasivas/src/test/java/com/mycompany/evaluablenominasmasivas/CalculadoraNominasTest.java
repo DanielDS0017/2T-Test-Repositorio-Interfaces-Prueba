@@ -14,7 +14,7 @@ class CalculadoraNominasTest {
         assertEquals(esperado, emp.calcularSueldoNetoMensual(), 0.01);
     }
 
-    // Caso "Sueldo Alto": 30k brutos, 0 años -> 15% IRPF [cite: 30]
+    // Caso "Sueldo Alto": 30k brutos, 0 años -> 15% IRPF 
     @Test
     void testSueldoAlto() {
         // CSV simulado: DNI;Nombre;30000;0
