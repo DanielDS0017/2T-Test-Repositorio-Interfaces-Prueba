@@ -1,6 +1,6 @@
 
 package com.mycompany.evaluablenominasmasivas;
-// Archivo: Empleado.java
+
 public class Empleado {
     private String dni;
     private String nombre;
@@ -18,7 +18,7 @@ public class Empleado {
     }
 
     public double calcularSueldoNetoMensual() {
-        // 1. Prorrateo (12 pagas)
+        // 1. Prorrateo 
         double brutoMensual = sueldoBrutoAnual / 12.0;
 
         // 2. Retención IRPF 
