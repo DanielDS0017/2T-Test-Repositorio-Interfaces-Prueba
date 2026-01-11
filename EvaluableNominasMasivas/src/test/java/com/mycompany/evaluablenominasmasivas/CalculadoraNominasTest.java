@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CalculadoraNominasTest {
 
-    //"Sueldo Bajo": 15k brutos, 0 años -> 10% IRPF
+    //Sueldo Baj: 15k brutos, 0 años -> 10% IRPF
     @Test
     void testSueldoBajo() {
-        // CSV simulado: DNI;Nombre;15000;0
+        //  DNI;Nombre;15000;0
         Empleado emp = new Empleado("1;Test;15000;0");
         double esperado = (15000.0 / 12) * 0.90; // 1250 - 10% = 1125
         assertEquals(esperado, emp.calcularSueldoNetoMensual(), 0.01);
@@ -18,7 +18,7 @@ class CalculadoraNominasTest {
     @Test
     void testSueldoAlto() {
         
-        //CSV simulado: DNI;Nombre;30000;0
+        // DNI;Nombre;30000;0
         Empleado emp = new Empleado("2;Test;30000;0");
         double esperado = (30000.0 / 12) * 0.85; // 2500 - 15% = 2125
         assertEquals(esperado, emp.calcularSueldoNetoMensual(), 0.01);

@@ -53,12 +53,14 @@ public class EvaluableNominasMasivas extends JFrame {
 
         @Override
         protected Void doInBackground() throws Exception {
-            File entrada = new File("dataset.csv");
+            File entrada = new File("nominas_masivas.csv");
             File salida = new File("resultado_nominas.csv");
 
             try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(entrada), "UTF-8")); BufferedWriter bw = new BufferedWriter(new FileWriter(salida))) {
 
                 String linea;
+                
+                br.readLine();
 
                 while ((linea = br.readLine()) != null) {
 
