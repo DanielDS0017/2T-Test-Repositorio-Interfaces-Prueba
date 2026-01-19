@@ -14,7 +14,7 @@ class CalculadoraNominasTest {
         assertEquals(esperado, emp.calcularSueldoNetoMensual(), 0.01);
     }
 
-    //"Sueldo Alto": 30k brutos, 0 años -> 15% IRPF 
+    //Sueldo Alto: 30k brutos, 0 años -> 15% IRPF 
     @Test
     void testSueldoAlto() {
         
@@ -24,7 +24,7 @@ class CalculadoraNominasTest {
         assertEquals(esperado, emp.calcularSueldoNetoMensual(), 0.01);
     }
 
-    //"Antigüedad": Verificar suma de 30€ por año.
+    //Antigüedad: Verificar suma de 30€ por año.
     
     @Test
     void testAntiguedad() {
